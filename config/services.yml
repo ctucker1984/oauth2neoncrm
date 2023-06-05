@@ -1,0 +1,9 @@
+services:
+    auth.provider.oauth.service.neoncrm:
+        class: christucker\oauth2neoncrm\auth\provider\oauth\service\neoncrm
+        arguments:
+            - '@config'
+            - '@language'
+            - '@request'
+        tags:
+            - { name: auth.provider.oauth.service }

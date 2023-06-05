@@ -1,0 +1,34 @@
+{
+    "name": "christucker/oauth2neoncrm",
+    "type": "phpbb-extension",
+    "description": "A phpBB extension supporting OAuth2 via NeonCRM",
+    "homepage": "https://www.temautomation.com",
+    "version": "1.0.0",
+    "time": "2023-06-04",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Tucker",
+            "email": "tucker95112@gmail.com",
+            "homepage": "https://www.teamautomation.com",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0.0",
+        "lusitanian/oauth": "0.8.11",
+        "php": ">=7.3.0",
+        "phpbb/phpbb": ">=3.2.7,<4.0.0@dev"
+    },
+    "extra": {
+        "display-name": "NeonCRM OAuth2 Provider",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.2.7,<4.0.0@dev"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": false
+        }
+    }
+}

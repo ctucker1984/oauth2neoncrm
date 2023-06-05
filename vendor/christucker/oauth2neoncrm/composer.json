@@ -1,0 +1,28 @@
+{
+    "name": "christucker/oauth2neoncrm",
+    "description": "Log onto phpBB with NeonCRM Constituent Account",
+    "type": "library",
+	"license": "MIT",
+    "homepage": "https://teamautomation.com",
+    "authors": [
+        {
+            "name": "Chris Tucker",
+            "email": "ctucker@teamautomation.com"
+        }
+    ],
+	"minimum-stability": "stable",
+    "require": {
+        "php": ">=7.3.0"
+    },
+    "extra": {
+        "display-name": "NeonCRM OAuth2",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.2.7,<4.0.0@dev"
+		}
+    },
+    "autoload": {
+        "files": [
+            "src/NeonCRMoAuth2.php"
+        ]
+    }
+}
